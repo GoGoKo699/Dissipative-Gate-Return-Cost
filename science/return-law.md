@@ -9,12 +9,13 @@ The [two-stage construction with one helper qubit](pure-helper.md) attains the s
 Let $`S`$ be a finite-dimensional data system and $`C`$ a finite-dimensional helper. The helper starts in $`|0\rangle\langle0|_C`$, independently of the data and of any reference entangled with the data. The joint state evolves according to
 
 ```math
-\frac{d\sigma_t}{dt}=\mathcal L_t(\sigma_t),
-\qquad
+\begin{aligned}
+\frac{d\sigma_t}{dt}&=\mathcal L_t(\sigma_t),\\
 \mathcal L_t(X)
-=\sum_j\left(L_j(t)XL_j(t)-\frac12\{L_j(t)^2,X\}\right)
-=-\frac12\sum_j[L_j(t),[L_j(t),X]],
+&=\sum_j\left(L_j(t)XL_j(t)-\frac12\{L_j(t)^2,X\}\right)\\
+&=-\frac12\sum_j[L_j(t),[L_j(t),X]],
 \qquad L_j(t)=L_j(t)^\dagger.
+\end{aligned}
 ```
 
 The laboratory generator has zero Hamiltonian term. The jump schedule is predetermined and independent of the input. Bath outcomes are unobserved, and the protocol has a fixed terminal time. The model supplies the chosen time-dependent Hermitian jumps; it includes no intermediate reset, fresh ancillary state injected during the evolution, postselection, or free coherent encoding or endpoint decoder. All helper systems used by the protocol belong to $`C`$ at the initial time.
@@ -50,7 +51,7 @@ s=s(U)=\frac12\|\mathrm{Ad}_U-\mathrm{id}_S\|_\diamond,
 \mathrm{Ad}_U(\rho)=U\rho U^\dagger.
 ```
 
-Both lie in $`[0,1]`$. A nontrivial target means $`s>0`$, equivalently that $`U`$ is not a scalar multiple of the identity. The error $`\varepsilon`$ is a joint error: it compares the data, the helper, and their correlations to the required product output. Its diamond norm also includes arbitrary initial entanglement between the data and an inert reference. The helper is approximately returned under this one joint criterion.
+Both lie in $`[0,1]`$. A nontrivial target means $`s\gt 0`$, equivalently that $`U`$ is not a scalar multiple of the identity. The error $`\varepsilon`$ is a joint error: it compares the data, the helper, and their correlations to the required product output. Its diamond norm also includes arbitrary initial entanglement between the data and an inert reference. The helper is approximately returned under this one joint criterion.
 
 For a difference of channels, the diamond distance has the operational expression
 
@@ -216,11 +217,11 @@ The initial purity is one. Apply the trajectory lemma on the joint system includ
 \le A(2\varepsilon-\varepsilon^2).
 ```
 
-Dropping the nonpositive term $`-A\varepsilon^2`$ and dividing by two proves the stated bound. For $`\varepsilon<s`$, solve the resulting quadratic inequality in $`\varepsilon`$. For $`\varepsilon\ge s`$, the displayed root is already no greater than $`s`$, so the same explicit lower bound holds. This includes $`A=0`$, when it reduces to $`\varepsilon\ge s`$. The proof also applies when $`\varepsilon\in[0,1]`$ is an upper bound on the actual joint channel error.
+Dropping the nonpositive term $`-A\varepsilon^2`$ and dividing by two proves the stated bound. For $`\varepsilon\lt s`$, solve the resulting quadratic inequality in $`\varepsilon`$. For $`\varepsilon\ge s`$, the displayed root is already no greater than $`s`$, so the same explicit lower bound holds. This includes $`A=0`$, when it reduces to $`\varepsilon\ge s`$. The proof also applies when $`\varepsilon\in[0,1]`$ is an upper bound on the actual joint channel error.
 
 ## Optimal inverse-accuracy order
 
-Let $`A_{\min}(\varepsilon;U)`$ be the infimum of the action over all allowed protocols and all finite pure helpers achieving joint channel error at most $`\varepsilon`$. For $`0<\varepsilon<s`$, the theorem gives
+Let $`A_{\min}(\varepsilon;U)`$ be the infimum of the action over all allowed protocols and all finite pure helpers achieving joint channel error at most $`\varepsilon`$. For $`0\lt \varepsilon\lt s`$, the theorem gives
 
 ```math
 A_{\min}(\varepsilon;U)\ge\frac{(s-\varepsilon)^2}{\varepsilon}.
@@ -232,7 +233,7 @@ The [explicit one-qubit helper construction](pure-helper.md) gives
 A_{\min}(\varepsilon;U)\le\frac{\pi^2+\pi}{\varepsilon}.
 ```
 
-Thus, for every fixed target with $`s(U)>0`$,
+Thus, for every fixed target with $`s(U)\gt 0`$,
 
 ```math
 A_{\min}(\varepsilon;U)=\Theta_U(\varepsilon^{-1})

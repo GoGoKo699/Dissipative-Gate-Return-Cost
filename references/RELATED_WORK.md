@@ -24,7 +24,7 @@ The present pure-controller upper bound is an explicit finite-action realization
 
 **Vu, Kuwahara, and Saito (2024)** prove fidelity–dissipation relations at arbitrary operation times. Appendix A, equations (22)–(24), gives $`(1-F_\phi)^2\le\gamma_\phi\Sigma_\phi/2`$, with $`\gamma_\phi=\int\sum_j\mathrm{Var}_\phi(L_j)dt`$ in the zero-Hamiltonian Hermitian case. Their model includes this generator class. [Primary full text](https://arxiv.org/html/2311.15762v3); [journal article](https://doi.org/10.1103/PhysRevResearch.6.033225).
 
-Applying that result to the present pure joint-return task gives the following deduction. With total dimension $`n=d_SD_C`$, small error $`0<\epsilon\le1-1/n`$, and natural-log binary entropy $`h`$,
+Applying that result to the present pure joint-return task gives the following deduction. With total dimension $`n=d_SD_C`$, small error $`0\lt \epsilon\le1-1/n`$, and natural-log binary entropy $`h`$,
 
 ```math
 \gamma_\phi\le\int\|\mathcal L_t\|_{2\to2}dt=2A,

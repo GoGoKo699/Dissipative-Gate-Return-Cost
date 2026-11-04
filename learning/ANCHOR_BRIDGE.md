@@ -303,7 +303,7 @@ and in particular
 \boxed{(s(U)-\epsilon)_+^2\le A\epsilon.}
 ```
 
-For $`0<\epsilon<s(U)`$, the required action is at least $`(s(U)-\epsilon)^2/\epsilon`$. The bound is uniform in controller dimension and control path.
+For $`0\lt \epsilon\lt s(U)`$, the required action is at least $`(s(U)-\epsilon)^2/\epsilon`$. The bound is uniform in controller dimension and control path.
 
 For the concrete $`Z`$ gate, $`|+\rangle`$ and $`Z|+\rangle=|-\rangle`$ are orthogonal, so $`s(Z)=1`$. Joint error at most $`0.01`$ therefore requires $`A\ge98.01`$. This is a lower bound over all allowed pure-controller protocols, not an estimate for a particular trajectory. The [return-law proof](../science/return-law.md#finite-action-return-bound) gives the exact assumptions and finite-action forms.
 
@@ -487,7 +487,7 @@ This is an operator identity for arbitrary inputs and references. After tracing 
 \qquad A=ma.
 ```
 
-The sum includes every branch. No completion flag is read and no outcome is selected. At fixed $`a>0`$, increasing $`m`$ gives achievable action $`O_U(\log(1/\epsilon))`$ with controller dimension $`m+1=O_U(\log(1/\epsilon))`$. This is an upper bound, not an unrestricted optimum over all consumed-controller protocols.
+The sum includes every branch. No completion flag is read and no outcome is selected. At fixed $`a\gt 0`$, increasing $`m`$ gives achievable action $`O_U(\log(1/\epsilon))`$ with controller dimension $`m+1=O_U(\log(1/\epsilon))`$. This is an upper bound, not an unrestricted optimum over all consumed-controller protocols.
 
 A small complete $`Z`$ example makes the bookkeeping explicit. Take two stages, each with $`a=(\ln3)/2`$, so $`q=2/3`$. The controller is a qutrit, the total action is $`A=\ln3`$, and
 

@@ -22,7 +22,7 @@ A=\frac12\int_0^T\|\mathcal L_t\|_{2\to2}\,dt.
 
 Here $`\|\cdot\|_{2\to2}`$ is the induced norm on Hilbert–Schmidt operator space. It is independent of the chosen Hermitian-jump representation. For a supplied list of jumps, $`A\le\int\sum_j\|L_j(t)\|_\infty^2dt`$. Equality holds for the individual stages in the explicit constructions.
 
-For the target $`\mathcal U(\rho)=U\rho U^\dagger`$, define its displacement from doing nothing by $`s(U)=\tfrac12\|\mathcal U-\mathrm{id}\|_\diamond`$. A fixed nontrivial target has $`s(U)>0`$. Under either return contract below, the error obeys
+For the target $`\mathcal U(\rho)=U\rho U^\dagger`$, define its displacement from doing nothing by $`s(U)=\tfrac12\|\mathcal U-\mathrm{id}\|_\diamond`$. A fixed nontrivial target has $`s(U)\gt 0`$. Under either return contract below, the error obeys
 
 ```math
 \boxed{(s(U)-\epsilon)_+^2\le A\epsilon.}

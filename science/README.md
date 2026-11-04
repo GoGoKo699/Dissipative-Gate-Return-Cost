@@ -44,7 +44,7 @@ A pure controller with approximate joint return is scored against the complete t
 \frac{(s(U)-\epsilon)^2}{\epsilon}
 \le A_{\min}(\epsilon;U)
 \le\frac{\pi^2+\pi}{\epsilon},
-\qquad 0<\epsilon<s(U).
+\qquad 0\lt \epsilon\lt s(U).
 ```
 
 An arbitrary mixed controller with exact marginal return obeys the same lower bound while allowing final correlations. The [mixed-return theorem](mixed-controllers.md) uses only return on the maximally mixed data input. Purity monotonicity forces that input's entire joint state to remain stationary, so every jump commutes with $`I_S\otimes\beta`$. A weighted norm then removes the factor that ordinary purity would introduce through $`\mathrm{Tr}\beta^2`$. A qubit controller in $`I/2`$ gives a matching inverse-action construction for the fixed target $`Z`$.

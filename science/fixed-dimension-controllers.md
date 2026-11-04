@@ -11,37 +11,41 @@ Let $`S`$ be a finite-dimensional data system, $`U`$ its target unitary, and $`C
 Write
 
 ```math
-\mathcal D[L](X)=LXL-\frac12\{L^2,X\},
-\qquad L=L^\dagger,
-\qquad
-A=\frac12\int_0^T\|\mathcal L_t\|_{2\to2}\,dt,
-\qquad
-s(U)=\frac12\|\mathrm{Ad}_U-\mathrm{id}_S\|_\diamond.
+\begin{aligned}
+\mathcal D[L](X)&=LXL-\frac12\{L^2,X\},
+\qquad L=L^\dagger,\\
+A&=\frac12\int_0^T\|\mathcal L_t\|_{2\to2}\,dt,\\
+s(U)&=\frac12\|\mathrm{Ad}_U-\mathrm{id}_S\|_\diamond.
+\end{aligned}
 ```
 
 The action uses the induced Hilbert–Schmidt norm of the actual generator, as in the [return law](return-law.md). It is invariant under a change of jump representation. The value $`s(U)`$ is positive precisely when $`U`$ is nontrivial as a channel.
 
 **Achievability statement.** Choose positive stage actions $`a_1,\ldots,a_m`$. There is a protocol with total action $`A=\sum_j a_j`$ whose reduced channel is exactly
 
+**(1)**
+
 ```math
 \mathcal E_m
 =Q_m\,\mathrm{id}_S+(1-Q_m)\mathrm{Ad}_U,
 \qquad
 Q_m=\prod_{j=1}^m q(a_j).
-\tag{1}
 ```
 
 The stage failure function satisfies
+
+**(2)**
 
 ```math
 0\le q(a)\le\min\left\{1,\frac{\pi^2}{4a}\right\},
 \qquad
 q(a)=\frac{\pi^2}{4a}+O(a^{-2})
 \quad(a\to\infty).
-\tag{2}
 ```
 
 For equal stage actions $`a_j=A/m`$, the exact half-diamond error and its consequences are
+
+**(3)**
 
 ```math
 \begin{aligned}
@@ -56,14 +60,15 @@ For equal stage actions $`a_j=A/m`$, the exact half-diamond error and its conseq
   \left[1+O_m(A^{-1})\right]
 \quad\text{for fixed }m.
 \end{aligned}
-\tag{3}
 ```
 
 The proof below gives the complete joint channel, including the flag coherences that are absent in the fixed-exchange construction.
 
 ## One rotating-dephasing stage
 
-During stage $`j`$, take a duration $`T_j>0`$, a constant rate $`\gamma_j=a_j/T_j`$, and local time $`s=t/T_j\in[0,1]`$. Apply the single jump
+During stage $`j`$, take a duration $`T_j\gt 0`$, a constant rate $`\gamma_j=a_j/T_j`$, and local time $`s=t/T_j\in[0,1]`$. Apply the single jump
+
+**(4)**
 
 ```math
 \begin{aligned}
@@ -75,7 +80,6 @@ L_j(s)=\sqrt{\gamma_j}\Bigl[&
         +U^\dagger\otimes|0\rangle\langle j|\bigr)
 \Bigr].
 \end{aligned}
-\tag{4}
 ```
 
 It acts as zero on all other flag subspaces. If $`P_j=I_S\otimes(|0\rangle\langle0|+|j\rangle\langle j|)`$, then
@@ -87,12 +91,13 @@ L_j(s)^\dagger=L_j(s),
 
 Its active eigenvalues are $`\pm\sqrt{\gamma_j}`$, with zero eigenvalues on the inactive subspace. A Hermitian jump with eigenvalues $`\lambda_r`$ has dissipator eigenvalues $`-(\lambda_r-\lambda_k)^2/2`$. Consequently,
 
+**(5)**
+
 ```math
 \|\mathcal D[L_j(s)]\|_{2\to2}=2\gamma_j,
 \qquad
 \frac12\int_0^{T_j}\|\mathcal D[L_j(t/T_j)]\|_{2\to2}\,dt
 =\gamma_jT_j=a_j.
-\tag{5}
 ```
 
 This equality accounts for the full generator, including its action on cross-flag operators. The inactive subspaces do not increase its norm. Also $`\|L_j(s)\|_\infty^2=\gamma_j`$, so the generator action and integrated jump-norm budget agree for this construction.
@@ -108,16 +113,19 @@ On the active pair, $`W_j^\dagger L_j(s)W_j`$ equals $`\sqrt{\gamma_j}I_S\otimes
 
 Starting in flag $`0`$, the active joint output is therefore
 
+**(6)**
+
 ```math
 W_j\bigl(\rho\otimes\tau_a\bigr)W_j^\dagger,
 \qquad
 \tau_a=
 \begin{pmatrix}q(a)&b(a)\\b(a)&1-q(a)\end{pmatrix},
 \qquad a=a_j.
-\tag{6}
 ```
 
 To calculate $`\tau_a`$, express its Bloch vector in the frame rotating with the dephasing axis. The two nonzero components satisfy
+
+**(7)**
 
 ```math
 \frac{d}{ds}
@@ -125,30 +133,31 @@ To calculate $`\tau_a`$, express its Bloch vector in the frame rotating with the
 =\begin{pmatrix}0&\pi\\-\pi&-2a\end{pmatrix}
 \begin{pmatrix}z_a\\x_a\end{pmatrix},
 \qquad(z_a(0),x_a(0))=(1,0).
-\tag{7}
 ```
 
 At $`s=1`$ the frame has rotated by $`\pi`$. Thus
+
+**(8)**
 
 ```math
 q(a)=\frac{1-z_a(1)}2,
 \qquad b(a)=-\frac{x_a(1)}2,
 \qquad
 z_a''+2az_a'+\pi^2z_a=0.
-\tag{8}
 ```
 
-For $`a>\pi`$, putting $`\Delta=\sqrt{a^2-\pi^2}`$ gives the explicit formulas
+For $`a\gt \pi`$, putting $`\Delta=\sqrt{a^2-\pi^2}`$ gives the explicit formulas
+
+**(9)**
 
 ```math
 \begin{aligned}
 z_a(1)&=e^{-a}\left(\cosh\Delta+\frac{a}{\Delta}\sinh\Delta\right),\\
 b(a)&=\frac{\pi e^{-a}}{2\Delta}\sinh\Delta.
 \end{aligned}
-\tag{9}
 ```
 
-For $`0\le a<\pi`$, replace $`\Delta`$ by $`i\sqrt{\pi^2-a^2}`$, so the expressions are real trigonometric functions. At $`a=\pi`$, take the continuous limit: $`z_a(1)=e^{-\pi}(1+\pi)`$ and $`b(a)=\pi e^{-\pi}/2`$. At zero action, $`q(0)=1`$.
+For $`0\le a\lt \pi`$, replace $`\Delta`$ by $`i\sqrt{\pi^2-a^2}`$, so the expressions are real trigonometric functions. At $`a=\pi`$, take the continuous limit: $`z_a(1)=e^{-\pi}(1+\pi)`$ and $`b(a)=\pi e^{-\pi}/2`$. At zero action, $`q(0)=1`$.
 
 For a finite-action bound, (7) implies
 
@@ -174,6 +183,8 @@ The one-stage output generally contains a coherence between flags $`0`$ and $`j`
 
 During stage $`j`$, decompose the joint operator space using the active Hilbert subspace $`P_j`$ and its orthogonal complement. With block labels $`A`$ and $`B`$, respectively, the jump has the form $`L_j=L_A\oplus0`$ and $`L_A^2=\gamma_jI_A`$. Every joint operator obeys
 
+**(10)**
+
 ```math
 \begin{aligned}
 \dot X_{AA}&=\mathcal D[L_A](X_{AA}),
@@ -181,7 +192,6 @@ During stage $`j`$, decompose the joint operator space using the active Hilbert 
 \dot X_{AB}&=-\frac{\gamma_j}{2}X_{AB},
 &\dot X_{BA}&=-\frac{\gamma_j}{2}X_{BA}.
 \end{aligned}
-\tag{10}
 ```
 
 Thus cross-flag coherences cannot feed the active diagonal blocks. A coherence joining an old success flag to flag $`0`$ is multiplied by $`e^{-a_j/2}`$ during this stage. It is not transferred to the new success flag.
@@ -197,6 +207,8 @@ c_j=Q_{j-1}b_j\exp\left(-\frac12\sum_{k=j+1}^m a_k\right).
 
 At the start of stage $`j`$, its flag $`j`$ is unoccupied. By (10), its active input block is exactly $`Q_{j-1}\rho\otimes|0\rangle\langle0|`$. Equation (6) transfers weight $`Q_{j-1}(1-q_j)`$ to the new flag and leaves weight $`Q_j`$ in flag $`0`$. Earlier success diagonals stay fixed. The newly generated $`0,j`$ coherence then undergoes the damping in (10) at each later stage. Induction gives the full joint channel
 
+**(11)**
+
 ```math
 \begin{aligned}
 \mathcal F_m(\rho)
@@ -208,7 +220,6 @@ At the start of stage $`j`$, its flag $`j`$ is unoccupied. By (10), its active i
  +c_j^*U\rho\otimes|j\rangle\langle0|
  \right].
 \end{aligned}
-\tag{11}
 ```
 
 Here $`c_j`$ is real for the chosen path; the conjugation in (11) also makes the Hermitian pairing explicit. There are no coherences between two different success flags. The formula is linear in the input operator, not merely a statement about input populations.
@@ -221,10 +232,11 @@ Tracing out $`C`$ removes all cross-flag terms. Since $`\sum_j Q_{j-1}(1-q_j)=1-
 
 Set $`m=2`$ and give each of the two stages action $`A/2`$. For every target unitary,
 
+**(12)**
+
 ```math
 \epsilon_2=s(U)\,q(A/2)^2
 =s(U)\frac{\pi^4}{4A^2}+O_U(A^{-3}).
-\tag{12}
 ```
 
 For a Pauli $`Z`$ gate, $`s(Z)=1`$, so the leading coefficient is exactly $`\pi^4/4`$. More generally, a fixed controller dimension $`D=m+1`$ achieves $`O_U(A^{-(D-1)})`$. Equivalently, for fixed $`D`$ it suffices to use action $`O_U(\epsilon^{-1/(D-1)})`$ in this family.
@@ -235,15 +247,18 @@ The qutrit already separates this consumed-state contract from approximate clean
 
 For equal stage actions, write $`q=q(A/m)`$. Equation (11) fixes the final controller's diagonal probabilities for every input:
 
+**(13)**
+
 ```math
 p_0=q^m,\qquad
 p_j=(1-q)q^{j-1}\quad(1\le j\le m).
-\tag{13}
 ```
 
 Its off-diagonal entries need not vanish: for example, the $`0,j`$ entry is $`c_j\mathrm{Tr}(\rho U^\dagger)`$. The controller marginal is therefore generally input dependent, and (13) alone is not its density matrix.
 
-Nevertheless, pinching in the flag basis cannot decrease von Neumann entropy. Define entropy in bits by $`S_2(\beta)=-\mathrm{Tr}(\beta\log_2\beta)`$ and binary entropy by $`h_2(q)=-q\log_2q-(1-q)\log_2(1-q)`$. For the actual controller marginal $`\beta_C`$ and $`0<q<1`$,
+Nevertheless, pinching in the flag basis cannot decrease von Neumann entropy. Define entropy in bits by $`S_2(\beta)=-\mathrm{Tr}(\beta\log_2\beta)`$ and binary entropy by $`h_2(q)=-q\log_2q-(1-q)\log_2(1-q)`$. For the actual controller marginal $`\beta_C`$ and $`0\lt q\lt 1`$,
+
+**(14)**
 
 ```math
 \begin{aligned}
@@ -253,7 +268,6 @@ S_2(\beta_C)
 =\frac{1-q^m}{1-q}h_2(q)
 \le\frac{h_2(q)}{1-q}.
 \end{aligned}
-\tag{14}
 ```
 
 The identity for the classical entropy follows by resolving the first stage: $`H_m=h_2(q)+qH_{m-1}`$, with $`H_0=0`$. The pinching bound holds uniformly over data inputs, including those entangled with a reference. It does not assert equality for the actual marginal.
