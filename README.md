@@ -22,7 +22,7 @@ A=\frac12\int_0^T\|\mathcal L_t\|_{2\to2}\,dt.
 
 Here $`\|\cdot\|_{2\to2}`$ is the induced norm on Hilbert–Schmidt operator space. It is independent of the chosen Hermitian-jump representation. For a supplied list of jumps, $`A\le\int\sum_j\|L_j(t)\|_\infty^2dt`$. Equality holds for the individual stages in the explicit constructions.
 
-For the target $`\mathcal U(\rho)=U\rho U^\dagger`$, define its displacement from doing nothing by $`s(U)=\tfrac12\|\mathcal U-\mathrm{id}\|_\diamond`$. A fixed nontrivial target has $`s(U)>0`$. Under either return contract below, the error obeys
+For the target $`\mathcal U(\rho)=U\rho U^\dagger`$, define its displacement from doing nothing by $`s(U)=\tfrac12\|\mathcal U-\mathrm{id}\|_\diamond`$. A fixed nontrivial target has $`s(U)\gt 0`$. Under either return contract below, the error obeys
 
 ```math
 \boxed{(s(U)-\epsilon)_+^2\le A\epsilon.}
@@ -47,7 +47,7 @@ Hermitian-jump evolution decreases joint purity. Its speed and purity loss satis
 
 ```math
 \|\sigma_T-\sigma_0\|_2^2
-\le A\left(\operatorname{Tr}\sigma_0^2-\operatorname{Tr}\sigma_T^2\right).
+\le A\left(\mathrm{Tr}\sigma_0^2-\mathrm{Tr}\sigma_T^2\right).
 ```
 
 A nontrivial gate moves a suitable pure input by a finite distance. Approximate joint return requires the full final output to be close to another pure state, which permits only a small purity loss. Combining the two facts forces the inverse-error action law. For an exactly returned mixed controller, a stationary-product argument and a weighted Hilbert–Schmidt norm give the same conclusion without a dimension or spectral factor.
@@ -65,6 +65,12 @@ Start with the [model, result map, and physical interpretation](science/README.m
 5. [Fixed controller dimension: a hierarchy of attainable error powers](science/fixed-dimension-controllers.md).
 
 The [related-work comparison](references/RELATED_WORK.md) distinguishes the contribution from established Zeno control, fidelity–dissipation bounds, catalytic structure, and dissipative flag constructions. The [bibliography](references/references.bib) records the primary sources.
+
+## Learn the project
+
+The [learning route](learning/README.md) uses Howard M. Wiseman and Gerard J. Milburn's *Quantum Measurement and Control* (2010) as its single educational anchor. Begin with the [source-to-project bridge](learning/ANCHOR_BRIDGE.md), which connects measurement and dephasing to complete-channel gate accuracy, controller return, and the action budget. The bridge supplies the project-specific steps rather than requiring the whole book first.
+
+The [30-milestone map](learning/MILESTONES.md) develops the background and then the scientific argument, from individual mechanisms to the full comparison. It is a common map of the project's understanding targets. Readers seeking exact statements and proofs can use the scientific route above directly.
 
 ## Scope and reproducibility
 

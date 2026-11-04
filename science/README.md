@@ -35,7 +35,7 @@ The model supplies the target-dependent jump and the ability to address its cont
 For the target displacement and channel error, use half-diamond distances. In particular,
 
 ```math
-s(U)=\frac12\|\operatorname{Ad}_U-\mathrm{id}\|_\diamond.
+s(U)=\frac12\|\mathrm{Ad}_U-\mathrm{id}\|_\diamond.
 ```
 
 A pure controller with approximate joint return is scored against the complete target $`\rho\mapsto U\rho U^\dagger\otimes|0\rangle\langle0|`$. This controls the gate error, the controller defect, and their correlations at once. The [pure-return theorem](return-law.md) and [one-qubit construction](pure-helper.md) show
@@ -44,10 +44,10 @@ A pure controller with approximate joint return is scored against the complete t
 \frac{(s(U)-\epsilon)^2}{\epsilon}
 \le A_{\min}(\epsilon;U)
 \le\frac{\pi^2+\pi}{\epsilon},
-\qquad 0<\epsilon<s(U).
+\qquad 0\lt \epsilon\lt s(U).
 ```
 
-An arbitrary mixed controller with exact marginal return obeys the same lower bound while allowing final correlations. The [mixed-return theorem](mixed-controllers.md) uses only return on the maximally mixed data input. Purity monotonicity forces that input's entire joint state to remain stationary, so every jump commutes with $`I_S\otimes\beta`$. A weighted norm then removes the factor that ordinary purity would introduce through $`\operatorname{Tr}\beta^2`$. A qubit controller in $`I/2`$ gives a matching inverse-action construction for the fixed target $`Z`$.
+An arbitrary mixed controller with exact marginal return obeys the same lower bound while allowing final correlations. The [mixed-return theorem](mixed-controllers.md) uses only return on the maximally mixed data input. Purity monotonicity forces that input's entire joint state to remain stationary, so every jump commutes with $`I_S\otimes\beta`$. A weighted norm then removes the factor that ordinary purity would introduce through $`\mathrm{Tr}\beta^2`$. A qubit controller in $`I/2`$ gives a matching inverse-action construction for the fixed target $`Z`$.
 
 Exact marginal return of a mixed state does not preserve an arbitrary inaccessible purification of that state. It also does not imply that the controller is independent of earlier outputs and freely reusable in every later task. Conversely, exact return of an initially pure state is stronger than approximate joint return: the rigidity argument makes its support invariant throughout. The approximate-return construction should not be read as an exact pure-return construction.
 
@@ -56,7 +56,7 @@ Exact marginal return of a mixed state does not preserve an arbitrary inaccessib
 In the [exchange-flag construction](consumed-controllers.md), the controller starts in level zero. Stage $`j`$ couples levels zero and $`j`$ with a Hermitian operator that applies $`U`$ on the forward transition. Earlier completed levels are untouched. The unobserved evolution gives the exact channel
 
 ```math
-\mathcal E_m=q^m\,\mathrm{id}+(1-q^m)\operatorname{Ad}_U,
+\mathcal E_m=q^m\,\mathrm{id}+(1-q^m)\mathrm{Ad}_U,
 \qquad q=\frac{1+e^{-2a}}2,
 \qquad A=ma.
 ```
@@ -66,7 +66,7 @@ The channel formula is an operator identity, so its error is exactly $`s(U)q^m`$
 The [fixed-dimension construction](fixed-dimension-controllers.md) uses a rotating dephasing transfer in each active pair. Its one-stage failure probability is $`q(a)=\pi^2/(4a)+O(a^{-2})`$. The same block structure multiplies the failure probabilities, giving
 
 ```math
-\mathcal E=Q\,\mathrm{id}+(1-Q)\operatorname{Ad}_U,
+\mathcal E=Q\,\mathrm{id}+(1-Q)\mathrm{Ad}_U,
 \qquad Q=\prod_{j=1}^{m}q(a_j),
 \qquad \sum_j a_j=A.
 ```

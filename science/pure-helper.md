@@ -1,6 +1,6 @@
 # A complete-channel construction with one helper qubit
 
-For every unitary $`U`$ on a finite-dimensional data system and every action $`A>0`$, a deterministic two-stage Hermitian-jump protocol with one initially pure helper qubit achieves
+For every unitary $`U`$ on a finite-dimensional data system and every action $`A\gt 0`$, a deterministic two-stage Hermitian-jump protocol with one initially pure helper qubit achieves
 
 ```math
 \frac12\|\mathcal N_A-\mathcal T_U\|_\diamond
@@ -64,7 +64,7 @@ This identity is a change of coordinates used in the proof. The physical protoco
 
 ## Stage one: carry the data unitary into the helper-one subspace
 
-Fix a stage duration $`T>0`$ and set
+Fix a stage duration $`T\gt 0`$ and set
 
 ```math
 \theta(t)=\frac{\pi t}{2T},\qquad 0\le t\le T.
@@ -107,7 +107,7 @@ For example, on any data-reference density operator, conjugation by $`W_U`$ leav
 
 ## A finite-time bound on the rotating dephasing equation
 
-The following estimate holds for every $`T>0`$, without an adiabatic expansion. Let
+The following estimate holds for every $`T\gt 0`$, without an adiabatic expansion. Let
 
 ```math
 V(t)=e^{-i\theta(t)Y},
@@ -231,7 +231,7 @@ The laboratory protocol over $`[0,2T]`$ uses one jump at each time:
 L(t)=
 \begin{cases}
 R_U\!\left(\dfrac{\pi t}{2T}\right),&0\le t\le T,\\[6pt]
-I_S\otimes r\!\left(\dfrac{\pi(t-T)}{2T}\right),&T<t\le2T.
+I_S\otimes r\!\left(\dfrac{\pi(t-T)}{2T}\right),&T\lt t\le2T.
 \end{cases}
 ```
 
@@ -243,7 +243,7 @@ Each stage has $`\|\mathcal L_t\|_{2\to2}=2`$, and so the full generator action 
 A=\frac12\int_0^{2T}\|\mathcal L_t\|_{2\to2}\,dt=2T.
 ```
 
-For a prescribed $`A>0`$, take $`T=A/2`$. The complete-channel bound becomes
+For a prescribed $`A\gt 0`$, take $`T=A/2`$. The complete-channel bound becomes
 
 ```math
 \varepsilon_A
@@ -251,6 +251,6 @@ For a prescribed $`A>0`$, take $`T=A/2`$. The complete-channel bound becomes
 \le\min\left\{1,\frac{\pi^2+\pi}{A}\right\}.
 ```
 
-In particular, action $`A=(\pi^2+\pi)/\varepsilon`$ suffices for any requested $`0<\varepsilon\le1`$. The protocol uses a two-dimensional helper and the standard input embedding $`\rho\mapsto\rho\otimes P_0`$. The unitaries $`W_U`$ and $`V(t)`$ appear only in the proof of the dissipative evolution; no coherent implementation of them is supplied to the protocol. The target dependence is fully present in the prescribed jump $`R_U(\theta)`$.
+In particular, action $`A=(\pi^2+\pi)/\varepsilon`$ suffices for any requested $`0\lt \varepsilon\le1`$. The protocol uses a two-dimensional helper and the standard input embedding $`\rho\mapsto\rho\otimes P_0`$. The unitaries $`W_U`$ and $`V(t)`$ appear only in the proof of the dissipative evolution; no coherent implementation of them is supplied to the protocol. The target dependence is fully present in the prescribed jump $`R_U(\theta)`$.
 
 The resulting guarantee is approximate joint return at error $`\varepsilon_A`$. It simultaneously controls the implemented gate, the returned helper state, and their residual correlations for every data-reference input.

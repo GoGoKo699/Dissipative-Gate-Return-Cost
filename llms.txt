@@ -12,6 +12,14 @@ This repository studies how returning a controller changes the action needed for
 - science/consumed-controllers.md: exact exchange-flag channel, exponential construction, dimension and entropy accounting.
 - science/fixed-dimension-controllers.md: rotating-flag construction and fixed-dimension error powers.
 
+## Learning and reading routes
+
+- learning/README.md: the common learning entry point and chosen source.
+- learning/ANCHOR_BRIDGE.md: Wiseman and Milburn, Quantum Measurement and Control (2010), connected to the project's definitions, mechanisms, proofs, and limits.
+- learning/MILESTONES.md: exactly M01–M30, divided into background/preliminaries and narrative/innovation, with understanding targets, dependencies, conceptual connections, and source pointers.
+
+For the scientific story, follow README.md and science/README.md before the five topic pages. For study, use the anchor bridge and milestone map; the selected book is the single educational anchor, while the primary research literature supports attribution and proof comparisons. For an exact theorem, follow the relevant topic page directly. For reproduction, begin with verification/README.md. The map describes the project, independently of any reader's progress.
+
 ## Evidence and attribution
 
 - references/RELATED_WORK.md: primary-source comparisons and stated coverage limits.
