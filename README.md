@@ -66,6 +66,12 @@ Start with the [model, result map, and physical interpretation](science/README.m
 
 The [related-work comparison](references/RELATED_WORK.md) distinguishes the contribution from established Zeno control, fidelity–dissipation bounds, catalytic structure, and dissipative flag constructions. The [bibliography](references/references.bib) records the primary sources.
 
+## Learn the project
+
+The [learning route](learning/README.md) uses Howard M. Wiseman and Gerard J. Milburn's *Quantum Measurement and Control* (2010) as its single educational anchor. Begin with the [source-to-project bridge](learning/ANCHOR_BRIDGE.md), which connects measurement and dephasing to complete-channel gate accuracy, controller return, and the action budget. The bridge supplies the project-specific steps rather than requiring the whole book first.
+
+The [30-milestone map](learning/MILESTONES.md) develops the background and then the scientific argument, from individual mechanisms to the full comparison. It is a common map of the project's understanding targets. Readers seeking exact statements and proofs can use the scientific route above directly.
+
 ## Scope and reproducibility
 
 The schedule is deterministic and the terminal time is fixed. There is no bath monitoring, feedback, postselection, intermediate reset, fresh helper injection, or supplied coherent encoder or decoder. A rotating frame used to solve an equation is not an extra physical Hamiltonian. The target-dependent jump operators and their addressing are supplied controls; their engineering or compilation cost is not included in $`A`$. The result is an action–accuracy comparison within this model, rather than a claim about ordinary gate count, heat, or hardware advantage.
