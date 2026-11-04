@@ -1,0 +1,428 @@
+{
+  "scope": "Finite independent matrix/ODE checks; general claims are analytical proofs.",
+  "pure_helper": [
+    {
+      "gate": "Z",
+      "stage_time": 2.0,
+      "action": 4.0,
+      "direct_vs_reduced_choi_residual": 5.119709868119322e-11,
+      "normalized_choi_half_trace_distance": 0.7647463089135409,
+      "certified_joint_half_diamond_upper_bound": 1.0
+    },
+    {
+      "gate": "Z",
+      "stage_time": 8.0,
+      "action": 16.0,
+      "direct_vs_reduced_choi_residual": 3.6234022748640196e-13,
+      "normalized_choi_half_trace_distance": 0.40355135359410593,
+      "certified_joint_half_diamond_upper_bound": 0.8131998159174469
+    },
+    {
+      "gate": "Z",
+      "stage_time": 25.0,
+      "action": 50.0,
+      "direct_vs_reduced_choi_residual": 7.671533823065667e-14,
+      "normalized_choi_half_trace_distance": 0.17094421234804547,
+      "certified_joint_half_diamond_upper_bound": 0.26022394109358304
+    },
+    {
+      "gate": "generic_qubit",
+      "stage_time": 2.0,
+      "action": 4.0,
+      "direct_vs_reduced_choi_residual": 2.5631508386293315e-11,
+      "normalized_choi_half_trace_distance": 0.5681142199630542,
+      "certified_joint_half_diamond_upper_bound": 1.0
+    },
+    {
+      "gate": "generic_qubit",
+      "stage_time": 8.0,
+      "action": 16.0,
+      "direct_vs_reduced_choi_residual": 2.3037006136899883e-13,
+      "normalized_choi_half_trace_distance": 0.3665268748699574,
+      "certified_joint_half_diamond_upper_bound": 0.8131998159174469
+    },
+    {
+      "gate": "generic_qubit",
+      "stage_time": 25.0,
+      "action": 50.0,
+      "direct_vs_reduced_choi_residual": 5.643083069039559e-14,
+      "normalized_choi_half_trace_distance": 0.1651130075904278,
+      "certified_joint_half_diamond_upper_bound": 0.26022394109358304
+    }
+  ],
+  "mixed_helper": [
+    {
+      "action": 0.0,
+      "half_diamond_error": 0.9999999999999999,
+      "action_times_error": 0.0,
+      "block_residual": 1.9055130740369522e-16,
+      "controller_marginal_residual": 0.0
+    },
+    {
+      "action": 0.3,
+      "half_diamond_error": 0.8698608042697011,
+      "action_times_error": 0.26095824128091033,
+      "block_residual": 1.4339870616109327e-12,
+      "controller_marginal_residual": 0.0
+    },
+    {
+      "action": 1.0,
+      "half_diamond_error": 0.6714421015430735,
+      "action_times_error": 0.6714421015430735,
+      "block_residual": 7.425335211819207e-12,
+      "controller_marginal_residual": 0.0
+    },
+    {
+      "action": 3.0,
+      "half_diamond_error": 0.42085041845665994,
+      "action_times_error": 1.2625512553699798,
+      "block_residual": 5.224305801818016e-12,
+      "controller_marginal_residual": 0.0
+    },
+    {
+      "action": 10.0,
+      "half_diamond_error": 0.19060257397530397,
+      "action_times_error": 1.9060257397530398,
+      "block_residual": 6.808925723723828e-14,
+      "controller_marginal_residual": 0.0
+    },
+    {
+      "action": 30.0,
+      "half_diamond_error": 0.07485863655761235,
+      "action_times_error": 2.2457590967283707,
+      "block_residual": 7.683340746444809e-15,
+      "controller_marginal_residual": 0.0
+    },
+    {
+      "action": 100.0,
+      "half_diamond_error": 0.02396337874107527,
+      "action_times_error": 2.396337874107527,
+      "block_residual": 5.839173016078774e-15,
+      "controller_marginal_residual": 0.0
+    }
+  ],
+  "consumed_helper": [
+    {
+      "gate": "Z",
+      "stages": 1,
+      "flag_dimension": 2,
+      "action": 0.8,
+      "identity_weight": 0.6009482589973277,
+      "choi_formula_residual": 2.291410016735609e-16,
+      "flag_entropy_nats": 0.6726253072544021,
+      "entropy_upper_bound_nats": 1.6855591346734602
+    },
+    {
+      "gate": "Z",
+      "stages": 2,
+      "flag_dimension": 3,
+      "action": 1.6,
+      "identity_weight": 0.3611388099919193,
+      "choi_formula_residual": 3.653287054582298e-16,
+      "flag_entropy_nats": 1.0768383146064777,
+      "entropy_upper_bound_nats": 1.6855591346734602
+    },
+    {
+      "gate": "Z",
+      "stages": 5,
+      "flag_dimension": 6,
+      "action": 4.0,
+      "identity_weight": 0.07837641716377851,
+      "choi_formula_residual": 3.439329486435482e-16,
+      "flag_entropy_nats": 1.5534510487800754,
+      "entropy_upper_bound_nats": 1.6855591346734602
+    },
+    {
+      "gate": "Z",
+      "stages": 10,
+      "flag_dimension": 11,
+      "action": 8.0,
+      "identity_weight": 0.0061428627674306345,
+      "choi_formula_residual": 3.1383509894699334e-16,
+      "flag_entropy_nats": 1.6752049762227723,
+      "entropy_upper_bound_nats": 1.6855591346734602
+    },
+    {
+      "gate": "generic_qubit",
+      "stages": 1,
+      "flag_dimension": 2,
+      "action": 0.8,
+      "identity_weight": 0.6009482589973277,
+      "choi_formula_residual": 3.4989324392094676e-16,
+      "flag_entropy_nats": 0.6726253072544021,
+      "entropy_upper_bound_nats": 1.6855591346734602
+    },
+    {
+      "gate": "generic_qubit",
+      "stages": 2,
+      "flag_dimension": 3,
+      "action": 1.6,
+      "identity_weight": 0.3611388099919193,
+      "choi_formula_residual": 7.7273241587148205e-16,
+      "flag_entropy_nats": 1.0768383146064777,
+      "entropy_upper_bound_nats": 1.6855591346734602
+    },
+    {
+      "gate": "generic_qubit",
+      "stages": 5,
+      "flag_dimension": 6,
+      "action": 4.0,
+      "identity_weight": 0.07837641716377851,
+      "choi_formula_residual": 2.6983926448399065e-16,
+      "flag_entropy_nats": 1.5534510487800754,
+      "entropy_upper_bound_nats": 1.6855591346734602
+    },
+    {
+      "gate": "generic_qubit",
+      "stages": 10,
+      "flag_dimension": 11,
+      "action": 8.0,
+      "identity_weight": 0.0061428627674306345,
+      "choi_formula_residual": 3.232259964504236e-16,
+      "flag_entropy_nats": 1.6752049762227723,
+      "entropy_upper_bound_nats": 1.6855591346734602
+    }
+  ],
+  "purity_geometry": {
+    "max_purity_identity_residual": 2.220446049250313e-16,
+    "minimum_integrated_bound_margin": 0.07130594289135134,
+    "max_weighted_projection_residual": 2.220446049250313e-16
+  },
+  "fixed_dimension": {
+    "scope": "Fixed-dimensional consumed pure controllers; numerical checks of exact channel identities.",
+    "complete_channel_cases": [
+      {
+        "target": "generic",
+        "stage_actions": [
+          1.0
+        ],
+        "controller_dimension": 2,
+        "total_action": 1.0,
+        "failure_probability": 0.6714421015430735,
+        "full_choi_max_abs_error": 4.537425990491843e-12,
+        "reduced_choi_max_abs_error": 3.933704567497876e-12,
+        "controller_population_error": 9.074740958682735e-12,
+        "trace_error": 2.246728823915503e-16,
+        "minimum_joint_eigenvalue": -2.8513303298650605e-17,
+        "controller_entropy_bits": 0.9114211411714856,
+        "diagonal_entropy_bound_bits": 0.9134461947464321,
+        "controller_off_diagonal_frobenius_norm": 0.03668974452992797,
+        "geometric_entropy_formula_bits": 0.9134461947464321
+      },
+      {
+        "target": "generic",
+        "stage_actions": [
+          10.0
+        ],
+        "controller_dimension": 2,
+        "total_action": 10.0,
+        "failure_probability": 0.19060257397530397,
+        "full_choi_max_abs_error": 5.817712803205177e-14,
+        "reduced_choi_max_abs_error": 2.4148945880937637e-14,
+        "controller_population_error": 5.5872001313153286e-14,
+        "trace_error": 4.447405351895922e-16,
+        "minimum_joint_eigenvalue": -1.5573132411747927e-16,
+        "controller_entropy_bits": 0.6970579436298465,
+        "diagonal_entropy_bound_bits": 0.7027302974380549,
+        "controller_off_diagonal_frobenius_norm": 0.057958069830121,
+        "geometric_entropy_formula_bits": 0.7027302974380549
+      },
+      {
+        "target": "generic",
+        "stage_actions": [
+          3.0,
+          3.0
+        ],
+        "controller_dimension": 3,
+        "total_action": 6.0,
+        "failure_probability": 0.1771150747151458,
+        "full_choi_max_abs_error": 4.649405860313804e-12,
+        "reduced_choi_max_abs_error": 4.0309082984434445e-12,
+        "controller_population_error": 9.298645187201646e-12,
+        "trace_error": 2.4823408513453446e-16,
+        "minimum_joint_eigenvalue": -1.0379186268073318e-16,
+        "controller_entropy_bits": 1.3906469468671805,
+        "diagonal_entropy_bound_bits": 1.3950588045726944,
+        "controller_off_diagonal_frobenius_norm": 0.03729245725438642,
+        "geometric_entropy_formula_bits": 1.3950588045726944
+      },
+      {
+        "target": "generic",
+        "stage_actions": [
+          10.0,
+          10.0
+        ],
+        "controller_dimension": 3,
+        "total_action": 20.0,
+        "failure_probability": 0.03632934120601122,
+        "full_choi_max_abs_error": 7.51078106601576e-14,
+        "reduced_choi_max_abs_error": 3.318443434590649e-14,
+        "controller_population_error": 8.415491681260024e-14,
+        "trace_error": 1.3362001381500712e-15,
+        "minimum_joint_eigenvalue": -1.0010196196093552e-16,
+        "controller_entropy_bits": 0.8355908930263397,
+        "diagonal_entropy_bound_bits": 0.8366725009401792,
+        "controller_off_diagonal_frobenius_norm": 0.011053857699619344,
+        "geometric_entropy_formula_bits": 0.8366725009401791
+      },
+      {
+        "target": "generic",
+        "stage_actions": [
+          30.0,
+          30.0
+        ],
+        "controller_dimension": 3,
+        "total_action": 60.0,
+        "failure_probability": 0.005603815467264696,
+        "full_choi_max_abs_error": 2.997584294612971e-14,
+        "reduced_choi_max_abs_error": 5.3004429679738305e-15,
+        "controller_population_error": 1.049769032385934e-14,
+        "trace_error": 7.796878849907412e-16,
+        "minimum_joint_eigenvalue": -5.215627583249275e-16,
+        "controller_entropy_bits": 0.4124220661731434,
+        "diagonal_entropy_bound_bits": 0.41252963300075274,
+        "controller_off_diagonal_frobenius_norm": 0.0019422769508965984,
+        "geometric_entropy_formula_bits": 0.4125296330007527
+      },
+      {
+        "target": "generic",
+        "stage_actions": [
+          10.0,
+          10.0,
+          10.0
+        ],
+        "controller_dimension": 4,
+        "total_action": 30.0,
+        "failure_probability": 0.006924465944692813,
+        "full_choi_max_abs_error": 1.0994071380122367e-13,
+        "reduced_choi_max_abs_error": 4.036783932713124e-14,
+        "controller_population_error": 1.0880187342013728e-13,
+        "trace_error": 3.6550559815027565e-16,
+        "minimum_joint_eigenvalue": -7.391607205289295e-17,
+        "controller_entropy_bits": 0.8619960724088571,
+        "diagonal_entropy_bound_bits": 0.8622022296916081,
+        "controller_off_diagonal_frobenius_norm": 0.0021068953732492927,
+        "geometric_entropy_formula_bits": 0.862202229691608
+      },
+      {
+        "target": "generic",
+        "stage_actions": [
+          0.7,
+          4.0,
+          11.0
+        ],
+        "controller_dimension": 4,
+        "total_action": 15.7,
+        "failure_probability": 0.04703215329301719,
+        "full_choi_max_abs_error": 2.6993546287101947e-12,
+        "reduced_choi_max_abs_error": 2.7830328961916864e-13,
+        "controller_population_error": 6.288802811892961e-12,
+        "trace_error": 4.0097992160893464e-17,
+        "minimum_joint_eigenvalue": -1.0134383430056805e-16,
+        "controller_entropy_bits": 1.6988295423343163,
+        "diagonal_entropy_bound_bits": 1.700200696802793,
+        "controller_off_diagonal_frobenius_norm": 0.014563094109542794
+      },
+      {
+        "target": "Z",
+        "stage_actions": [
+          10.0,
+          10.0
+        ],
+        "controller_dimension": 3,
+        "total_action": 20.0,
+        "failure_probability": 0.03632934120601122,
+        "full_choi_max_abs_error": 6.710517558294882e-14,
+        "reduced_choi_max_abs_error": 7.505107646466058e-14,
+        "controller_population_error": 9.681144774731365e-14,
+        "trace_error": 6.661338147750939e-16,
+        "minimum_joint_eigenvalue": -8.025634400592775e-17,
+        "controller_entropy_bits": 0.8366725009397898,
+        "diagonal_entropy_bound_bits": 0.8366725009401792,
+        "controller_off_diagonal_frobenius_norm": 1.2896346986466743e-20,
+        "Z_normalized_choi_trace_distance": 0.03632934120593617,
+        "geometric_entropy_formula_bits": 0.8366725009401791
+      }
+    ],
+    "generator_action_normalization": [
+      {
+        "local_time": 0.0,
+        "gamma": 0.37,
+        "half_generator_norm": 0.36999999999999994,
+        "absolute_error": 5.551115123125783e-17
+      },
+      {
+        "local_time": 0.271,
+        "gamma": 0.37,
+        "half_generator_norm": 0.3700000000000002,
+        "absolute_error": 2.220446049250313e-16
+      },
+      {
+        "local_time": 1.0,
+        "gamma": 0.37,
+        "half_generator_norm": 0.37000000000000005,
+        "absolute_error": 5.551115123125783e-17
+      }
+    ],
+    "stage_failure_bound": [
+      {
+        "action": 0.01,
+        "q": 0.9950248917334422,
+        "upper_bound": 1.0
+      },
+      {
+        "action": 0.1,
+        "q": 0.9523951985111059,
+        "upper_bound": 1.0
+      },
+      {
+        "action": 1.0,
+        "q": 0.6714421015430735,
+        "upper_bound": 1.0
+      },
+      {
+        "action": 3.141592653589793,
+        "q": 0.41051277679296566,
+        "upper_bound": 0.7853981633974483
+      },
+      {
+        "action": 10.0,
+        "q": 0.19060257397530397,
+        "upper_bound": 0.24674011002723395
+      },
+      {
+        "action": 100.0,
+        "q": 0.02396337874107527,
+        "upper_bound": 0.024674011002723394
+      },
+      {
+        "action": 10000.0,
+        "q": 0.0002466669145237903,
+        "upper_bound": 0.00024674011002723397
+      }
+    ],
+    "qutrit_asymptotic_coefficient": [
+      {
+        "total_action": 1000.0,
+        "A_squared_Z_error": 24.065809995898565,
+        "limiting_coefficient": 24.352272758500604,
+        "relative_error": 0.011763286550001473
+      },
+      {
+        "total_action": 10000.0,
+        "A_squared_Z_error": 24.32339365154613,
+        "limiting_coefficient": 24.352272758500604,
+        "relative_error": 0.0011858895981030626
+      },
+      {
+        "total_action": 100000.0,
+        "A_squared_Z_error": 24.349382501023882,
+        "limiting_coefficient": 24.352272758500604,
+        "relative_error": 0.00011868532786996067
+      }
+    ],
+    "maximum_full_choi_error": 4.649405860313804e-12,
+    "maximum_reduced_choi_error": 4.0309082984434445e-12,
+    "all_checks_passed": true
+  }
+}
