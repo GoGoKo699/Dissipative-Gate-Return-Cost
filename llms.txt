@@ -1,0 +1,25 @@
+# Dissipative-Gate-Return-Cost
+
+This repository studies how returning a controller changes the action needed for an accurate unitary gate under deterministic, unmonitored Hermitian Lindblad dynamics with zero Hamiltonian.
+
+## Scientific entry points
+
+- README.md: question, main results, scope, and navigation.
+- science/README.md: common model, resource accounting, operational distinctions, and physical interpretation.
+- science/return-law.md: dimension-independent pure joint-return converse.
+- science/pure-helper.md: matching one-qubit helper construction for arbitrary fixed unitary targets.
+- science/mixed-controllers.md: exact mixed marginal-return converse and explicit Z gate.
+- science/consumed-controllers.md: exact exchange-flag channel, exponential construction, dimension and entropy accounting.
+- science/fixed-dimension-controllers.md: rotating-flag construction and fixed-dimension error powers.
+
+## Evidence and attribution
+
+- references/RELATED_WORK.md: primary-source comparisons and stated coverage limits.
+- references/references.bib: bibliographic metadata.
+- verification/README.md: reproduction instructions and the limits of numerical checks.
+- verification/run_all.py: independent matrix and differential-equation checks.
+- verification/fixed_dimension.py: independent reference-extended rotating-flag check.
+- verification/results.json: per-case numerical evidence.
+- verification/plot_action.py: analytical action–accuracy figure and CSV generation.
+
+The action is one half of the integrated induced Hilbert–Schmidt generator norm. The pure-controller error includes approximate joint return; the mixed-controller theorem assumes exact marginal return and permits correlations. Consumed-controller errors concern the reduced data channel unless a changed joint target is explicitly supplied. Do not conflate these contracts or describe a numerical Choi-state diagnostic as a general diamond-norm certificate.
