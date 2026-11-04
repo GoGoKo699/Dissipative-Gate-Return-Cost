@@ -24,7 +24,7 @@ Let $`S`$ be a finite data system of dimension $`d`$, and let $`C`$ be any finit
 
 There is no Hamiltonian term. Piecewise continuous controls suffice; the arguments also apply to integrable controls whenever the corresponding propagator and identities are well defined. All supplied controller degrees of freedom are included in $`C`$. An external data reference evolves trivially.
 
-Write $`\|X\|_2^2=\operatorname{Tr}(X^\dagger X)`$ and define
+Write $`\|X\|_2^2=\mathrm{Tr}(X^\dagger X)`$ and define
 
 ```math
 \|\mathcal L_t\|_{2\to2}
@@ -46,7 +46,7 @@ because $`\|[L_j,\cdot]\|_{2\to2}\le2\|L_j\|_\infty`$. Thus every lower bound in
 Let $`\Phi_T`$ be the joint propagator, and let
 
 ```math
-\mathcal E(\rho):=\operatorname{Tr}_C\Phi_T(\rho\otimes\beta),
+\mathcal E(\rho):=\mathrm{Tr}_C\Phi_T(\rho\otimes\beta),
 \qquad
 \mathcal U(\rho):=U\rho U^\dagger.
 ```
@@ -61,7 +61,7 @@ The standard complete-channel error is $`\epsilon=\tfrac12\|\mathcal E-\mathcal 
 The sole return hypothesis used in the proof is
 
 ```math
-\operatorname{Tr}_S\Phi_T\left(\frac{I_S}{d}\otimes\beta\right)=\beta.
+\mathrm{Tr}_S\Phi_T\left(\frac{I_S}{d}\otimes\beta\right)=\beta.
 \tag{R}
 ```
 
@@ -69,11 +69,11 @@ Exact controller marginal return for every data input implies (R). Neither exact
 
 ## 1. Return on the maximally mixed input forces a stationary product
 
-Set $`\tau=I_S/d\otimes\beta`$, and evolve this particular initial state to $`\omega_t=\Phi_t(\tau)`$. Condition (R) gives $`\operatorname{Tr}_S(\omega_T-\tau)=0`$. Consequently the Hilbert–Schmidt cross term vanishes and
+Set $`\tau=I_S/d\otimes\beta`$, and evolve this particular initial state to $`\omega_t=\Phi_t(\tau)`$. Condition (R) gives $`\mathrm{Tr}_S(\omega_T-\tau)=0`$. Consequently the Hilbert–Schmidt cross term vanishes and
 
 ```math
-\operatorname{Tr}(\omega_T^2)
-=\frac{\operatorname{Tr}(\beta^2)}{d}
+\mathrm{Tr}(\omega_T^2)
+=\frac{\mathrm{Tr}(\beta^2)}{d}
  +\|\omega_T-\tau\|_2^2.
 \tag{1}
 ```
@@ -81,7 +81,7 @@ Set $`\tau=I_S/d\otimes\beta`$, and evolve this particular initial state to $`\o
 For Hermitian jumps, purity has the exact derivative
 
 ```math
-\frac{d}{dt}\operatorname{Tr}(\omega_t^2)
+\frac{d}{dt}\mathrm{Tr}(\omega_t^2)
 =-\sum_j\|[L_j(t),\omega_t]\|_2^2\le0.
 \tag{2}
 ```
@@ -110,7 +110,7 @@ On the invariant support define the Hilbert-space inner product and norm
 
 ```math
 \langle X,Y\rangle_\beta
-:=\operatorname{Tr}\!\left[X^\dagger(I_S\otimes\beta^{-1})Y\right],
+:=\mathrm{Tr}\!\left[X^\dagger(I_S\otimes\beta^{-1})Y\right],
 \qquad
 \|X\|_\beta^2:=\langle X,X\rangle_\beta,
 \qquad
@@ -146,14 +146,14 @@ The triangle inequality for the integral and Cauchy–Schwarz in time now give
 \tag{5}
 ```
 
-The weight is needed because ordinary joint purity would scale with $`\operatorname{Tr}\beta^2`$. In (5), a pure data state initially has weighted purity one regardless of the controller spectrum.
+The weight is needed because ordinary joint purity would scale with $`\mathrm{Tr}\beta^2`$. In (5), a pure data state initially has weighted purity one regardless of the controller spectrum.
 
 ## 3. Projection to the data and the finite-action converse
 
 The map
 
 ```math
-\Pi_\beta(X):=\operatorname{Tr}_C(X)\otimes\beta
+\Pi_\beta(X):=\mathrm{Tr}_C(X)\otimes\beta
 ```
 
 is an orthogonal projection for $`\langle\cdot,\cdot\rangle_\beta`$. Indeed, for every data operator $`Z`$,
@@ -167,13 +167,13 @@ is an orthogonal projection for $`\langle\cdot,\cdot\rangle_\beta`$. Indeed, for
 Therefore
 
 ```math
-\|\operatorname{Tr}_C X\|_2\le\|X\|_\beta,
+\|\mathrm{Tr}_C X\|_2\le\|X\|_\beta,
 \qquad
-P_\beta(T)\ge\operatorname{Tr}[\mathcal E(\rho)^2].
+P_\beta(T)\ge\mathrm{Tr}[\mathcal E(\rho)^2].
 \tag{6}
 ```
 
-Choose a pure $`\rho=|\psi\rangle\langle\psi|`$, write $`\rho_{\rm out}=\mathcal E(\rho)`$ and $`\varphi=U\rho U^\dagger`$, and let $`p=\operatorname{Tr}(\varphi\rho_{\rm out})`$. The assumed error gives $`p\ge1-\epsilon`$. Equations (5) and (6), together with $`P_\beta(0)=1`$, imply
+Choose a pure $`\rho=|\psi\rangle\langle\psi|`$, write $`\rho_{\rm out}=\mathcal E(\rho)`$ and $`\varphi=U\rho U^\dagger`$, and let $`p=\mathrm{Tr}(\varphi\rho_{\rm out})`$. The assumed error gives $`p\ge1-\epsilon`$. Equations (5) and (6), together with $`P_\beta(0)=1`$, imply
 
 ```math
 \|\rho_{\rm out}-\rho\|_2^2
@@ -214,11 +214,11 @@ For a unitary channel and the identity, define
 s(U):=\frac12\|\mathcal U-\mathrm{id}\|_\diamond.
 ```
 
-A reference-assisted pure input has overlap $`\operatorname{Tr}(\eta U)`$ with its image, where $`\eta`$ is its reduced data state. Since $`U`$ is normal, these overlaps form the convex hull of its eigenvalues. Every convex combination $`\sum_k p_k e^{i\theta_k}`$ is also realized by the unentangled vector $`\sum_k\sqrt{p_k}|u_k\rangle`$. Hence
+A reference-assisted pure input has overlap $`\mathrm{Tr}(\eta U)`$ with its image, where $`\eta`$ is its reduced data state. Since $`U`$ is normal, these overlaps form the convex hull of its eigenvalues. Every convex combination $`\sum_k p_k e^{i\theta_k}`$ is also realized by the unentangled vector $`\sum_k\sqrt{p_k}|u_k\rangle`$. Hence
 
 ```math
 s(U)=\max_{|\psi\rangle}s_\psi(U)
-=\sqrt{1-\min_\eta|\operatorname{Tr}(\eta U)|^2}.
+=\sqrt{1-\min_\eta|\mathrm{Tr}(\eta U)|^2}.
 ```
 
 A pure data input therefore achieves the required displacement even though $`s(U)`$ is a complete-channel distance. Maximizing (8) proves
@@ -290,7 +290,7 @@ Writing $`C(u)=[a(u)I+b(u)iY]/2`$ reduces this to the real system
 \tag{12}
 ```
 
-Equivalently, $`a''+2Aa'+\pi^2a=0`$, with $`a'(0)=0`$. Since $`R(1)=-I`$, the final coherence multiplier is $`\operatorname{Tr}B(1)=-a(1)`$. Hence the complete reduced data channel is
+Equivalently, $`a''+2Aa'+\pi^2a=0`$, with $`a'(0)=0`$. Since $`R(1)=-I`$, the final coherence multiplier is $`\mathrm{Tr}B(1)=-a(1)`$. Hence the complete reduced data channel is
 
 ```math
 \mathcal E_A

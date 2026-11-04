@@ -30,7 +30,7 @@ The charged action is the induced Hilbert–Schmidt generator norm
 A=\frac12\int\|\mathcal L_t\|_{2\to2}\,dt.
 ```
 
-The norm is induced on operators equipped with $`\|X\|_2^2=\operatorname{Tr}(X^\dagger X)`$. It is not the Frobenius norm of a superoperator matrix. The [mixed-controller note](mixed-controllers.md) gives the general model and the relation to the sum-of-jump-norm budget. These two action conventions agree for the jumps used below.
+The norm is induced on operators equipped with $`\|X\|_2^2=\mathrm{Tr}(X^\dagger X)`$. It is not the Frobenius norm of a superoperator matrix. The [mixed-controller note](mixed-controllers.md) gives the general model and the relation to the sum-of-jump-norm budget. These two action conventions agree for the jumps used below.
 
 The controller has an orthonormal basis $`|0\rangle,|1\rangle,\ldots,|m\rangle`$ and starts in $`|0\rangle`$. The basis state $`|0\rangle`$ records the branch on which the gate has not yet been applied; $`|j\rangle`$ records the branch on which stage $`j`$ applied it. These are labels for the unconditioned quantum channel. No flag is measured during the protocol.
 

@@ -21,7 +21,7 @@ The laboratory generator has zero Hamiltonian term. The jump schedule is predete
 
 For almost every time, the generator has a finite Hermitian-jump representation of the displayed form. We assume that $`\mathcal L_t`$ is measurable and has integrable norm. In finite dimension these conditions give an absolutely continuous propagator, and the differential identities below hold almost everywhere.
 
-For operators, use the Hilbert–Schmidt norm $`\|X\|_2=(\operatorname{Tr}X^\dagger X)^{1/2}`$. The action is
+For operators, use the Hilbert–Schmidt norm $`\|X\|_2=(\mathrm{Tr}X^\dagger X)^{1/2}`$. The action is
 
 ```math
 A=\frac12\int_0^T\|\mathcal L_t\|_{2\to2}\,dt,
@@ -45,9 +45,9 @@ Throughout, the two dimensionless distances are
 ```math
 \varepsilon=\frac12\|\mathcal N-\mathcal T_U\|_\diamond,
 \qquad
-s=s(U)=\frac12\|\operatorname{Ad}_U-\mathrm{id}_S\|_\diamond,
+s=s(U)=\frac12\|\mathrm{Ad}_U-\mathrm{id}_S\|_\diamond,
 \qquad
-\operatorname{Ad}_U(\rho)=U\rho U^\dagger.
+\mathrm{Ad}_U(\rho)=U\rho U^\dagger.
 ```
 
 Both lie in $`[0,1]`$. A nontrivial target means $`s>0`$, equivalently that $`U`$ is not a scalar multiple of the identity. The error $`\varepsilon`$ is a joint error: it compares the data, the helper, and their correlations to the required product output. Its diamond norm also includes arbitrary initial entanglement between the data and an inert reference. The helper is approximately returned under this one joint criterion.
@@ -65,7 +65,7 @@ The maximum can be taken over pure states by convexity. This expression fixes th
 
 ## Generator action and representation accounting
 
-Equip operator space with the inner product $`\langle X,Y\rangle_2=\operatorname{Tr}X^\dagger Y`$. Hermiticity of the jumps implies
+Equip operator space with the inner product $`\langle X,Y\rangle_2=\mathrm{Tr}X^\dagger Y`$. Hermiticity of the jumps implies
 
 ```math
 \langle X,-\mathcal L_t(X)\rangle_2
@@ -109,11 +109,11 @@ The same positive self-adjoint generator structure holds after this amplificatio
 
 ```math
 \|\sigma_T-\sigma_0\|_2^2
-\le A\left(\operatorname{Tr}\sigma_0^2-
-\operatorname{Tr}\sigma_T^2\right).
+\le A\left(\mathrm{Tr}\sigma_0^2-
+\mathrm{Tr}\sigma_T^2\right).
 ```
 
-**Proof.** Write $`P(t)=\operatorname{Tr}\sigma_t^2`$. The equation of motion and positivity of $`K_t`$ give
+**Proof.** Write $`P(t)=\mathrm{Tr}\sigma_t^2`$. The equation of motion and positivity of $`K_t`$ give
 
 ```math
 -P'(t)=2\langle\sigma_t,K_t\sigma_t\rangle_2
@@ -165,7 +165,7 @@ In particular, the first inequality implies the explicit finite-action lower bou
 \frac{A+2s-\sqrt{A^2+4As}}{2}.
 ```
 
-**Proof.** Choose a pure data-reference input $`|\psi\rangle_{SR}`$ attaining the diamond distance between $`\operatorname{Ad}_U`$ and the identity. Let the pure initial and desired final joint states be
+**Proof.** Choose a pure data-reference input $`|\psi\rangle_{SR}`$ attaining the diamond distance between $`\mathrm{Ad}_U`$ and the identity. Let the pure initial and desired final joint states be
 
 ```math
 \sigma_0=|\psi\rangle\langle\psi|_{SR}\otimes|0\rangle\langle0|_C,
@@ -184,8 +184,8 @@ Let $`\sigma_T`$ be the actual output for this input. The definition of the join
 
 ```math
 \|X\|_2^2
-=\operatorname{Tr}X_+^2+\operatorname{Tr}X_-^2
-\le(\operatorname{Tr}X_+)^2+(\operatorname{Tr}X_-)^2
+=\mathrm{Tr}X_+^2+\mathrm{Tr}X_-^2
+\le(\mathrm{Tr}X_+)^2+(\mathrm{Tr}X_-)^2
 =\frac12\|X\|_1^2.
 ```
 
@@ -198,13 +198,13 @@ Applied to $`X=\sigma_T-\omega`$, this implies $`\|\sigma_T-\omega\|_2\le\sqrt2\
 The final purity is also controlled by the same error. Measuring the rank-one projector $`\omega`$ yields
 
 ```math
-p=\operatorname{Tr}(\omega\sigma_T)\ge1-\varepsilon.
+p=\mathrm{Tr}(\omega\sigma_T)\ge1-\varepsilon.
 ```
 
-Hilbert–Schmidt Cauchy–Schwarz and $`\operatorname{Tr}\omega^2=1`$ imply
+Hilbert–Schmidt Cauchy–Schwarz and $`\mathrm{Tr}\omega^2=1`$ imply
 
 ```math
-\operatorname{Tr}\sigma_T^2\ge p^2\ge(1-\varepsilon)^2.
+\mathrm{Tr}\sigma_T^2\ge p^2\ge(1-\varepsilon)^2.
 ```
 
 The initial purity is one. Apply the trajectory lemma on the joint system including the inert reference to obtain
@@ -212,7 +212,7 @@ The initial purity is one. Apply the trajectory lemma on the joint system includ
 ```math
 2(s-\varepsilon)_+^2
 \le\|\sigma_T-\sigma_0\|_2^2
-\le A\left(1-\operatorname{Tr}\sigma_T^2\right)
+\le A\left(1-\mathrm{Tr}\sigma_T^2\right)
 \le A(2\varepsilon-\varepsilon^2).
 ```
 

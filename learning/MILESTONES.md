@@ -6,7 +6,7 @@ The **11 background/preliminaries milestones** connect measurement averaging, op
 
 The single educational anchor is Howard M. Wiseman and Gerard J. Milburn, *Quantum Measurement and Control* (2010), abbreviated **W&M**. Its verified section numbers and starting pages are recorded in [the anchor bridge](ANCHOR_BRIDGE.md#the-educational-anchor). Section pointers below identify relevant foundations; the bridge supplies additional complete-channel notation and connects those foundations to the project-specific derivations. The canonical claims and proofs remain in [the scientific account](../science/README.md).
 
-Throughout, $`S`$ is the data system, $`C`$ the supplied controller, and $`R`$ an inert reference. The target is the channel $`\operatorname{Ad}_U(\rho)=U\rho U^\dagger`$. The symbols $`A`$, $`\epsilon`$, and $`s(U)`$ retain the conventions of the canonical science pages.
+Throughout, $`S`$ is the data system, $`C`$ the supplied controller, and $`R`$ an inert reference. The target is the channel $`\mathrm{Ad}_U(\rho)=U\rho U^\dagger`$. The symbols $`A`$, $`\epsilon`$, and $`s(U)`$ retain the conventions of the canonical science pages.
 
 ## Background/preliminaries: M01–M11
 

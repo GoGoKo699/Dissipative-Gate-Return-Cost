@@ -60,7 +60,7 @@ If $`\Phi_T`$ is the joint evolution on $`SC`$, the reduced data channel is
 
 ```math
 \mathcal E(\rho_S)
-=\operatorname{Tr}_C\Phi_T(\rho_S\otimes\beta_C).
+=\mathrm{Tr}_C\Phi_T(\rho_S\otimes\beta_C).
 ```
 
 The partial trace removes the controller from the reported output. It does not remove correlations between the data and $`R`$ from the error criterion.
@@ -70,7 +70,7 @@ For two states, their trace distance is
 ```math
 D(\rho,\omega)=\frac12\|\rho-\omega\|_1,
 \qquad
-\|X\|_1=\operatorname{Tr}\sqrt{X^\dagger X}.
+\|X\|_1=\mathrm{Tr}\sqrt{X^\dagger X}.
 ```
 
 This distance equals the largest difference in the probability of a measurement event. To compare two channels $`\mathcal E`$ and $`\mathcal Q`$, first set $`\Delta=\mathcal E-\mathcal Q`$. Their half-diamond distance is
@@ -104,7 +104,7 @@ For a measurement described by resolved outcome operators $`M_r`$,
 ```math
 \sum_r M_r^\dagger M_r=I,
 \qquad
-p_r=\operatorname{Tr}(M_r\rho M_r^\dagger).
+p_r=\mathrm{Tr}(M_r\rho M_r^\dagger).
 ```
 
 When outcome $`r`$ is recorded and has nonzero probability, the conditional state is $`M_r\rho M_r^\dagger/p_r`$. When the outcome is unread, the state is the probability-weighted average
@@ -148,9 +148,9 @@ For a fixed $`L=\sqrt\gamma Z`$, the populations are constant and the coherence 
 ```math
 \begin{aligned}
 \mathcal E_t
-&=q_t\,\mathrm{id}+(1-q_t)\operatorname{Ad}_Z,\\
+&=q_t\,\mathrm{id}+(1-q_t)\mathrm{Ad}_Z,\\
 q_t&=\frac{1+e^{-2\gamma t}}2,
-\qquad \operatorname{Ad}_Z(\rho)=Z\rho Z.
+\qquad \mathrm{Ad}_Z(\rho)=Z\rho Z.
 \end{aligned}
 ```
 
@@ -171,11 +171,11 @@ The following notation separates a measurement update, an instantaneous generato
 | Jump operator | $`L_j(t)`$ | A rate-scaled operator in the master equation. |
 | Generator | $`\mathcal L_t`$ | The linear map determining the instantaneous derivative. |
 | Joint propagator | $`\Phi_T`$ | The channel obtained by integrating the generator. |
-| Target channel | $`\mathcal U=\operatorname{Ad}_U`$ | The desired unitary action on the data. |
+| Target channel | $`\mathcal U=\mathrm{Ad}_U`$ | The desired unitary action on the data. |
 
 A rate may be written outside a dissipator as $`\gamma\mathcal D[c]`$. Here it is absorbed into $`L=\sqrt\gamma\,c`$, so $`\mathcal D[L]=\gamma\mathcal D[c]`$. This square root is necessary when translating a physical decay rate into the action convention.
 
-The proof uses the Hilbert–Schmidt norm $`\|X\|_2^2=\operatorname{Tr}(X^\dagger X)`$. The norm of a generator is induced by that operator norm:
+The proof uses the Hilbert–Schmidt norm $`\|X\|_2^2=\mathrm{Tr}(X^\dagger X)`$. The norm of a generator is induced by that operator norm:
 
 ```math
 \|\mathcal L_t\|_{2\to2}
@@ -221,7 +221,7 @@ Hilbert–Schmidt operator space is a Hilbert-space tensor product, and the iden
 
 ## Displacement and purity loss
 
-Purity is $`P(t)=\operatorname{Tr}\sigma_t^2`$. A density operator has purity one exactly when it is pure. Hermitian-jump evolution obeys
+Purity is $`P(t)=\mathrm{Tr}\sigma_t^2`$. A density operator has purity one exactly when it is pure. Hermitian-jump evolution obeys
 
 ```math
 -P'(t)=\sum_j\|[L_j(t),\sigma_t]\|_2^2\ge0.
@@ -235,7 +235,7 @@ Let $`K_t=-\mathcal L_t`$. For every operator $`X`$,
 \langle X,K_tX\rangle_2
 =\frac12\sum_j\|[L_j(t),X]\|_2^2,
 \qquad
-\langle X,Y\rangle_2=\operatorname{Tr}(X^\dagger Y).
+\langle X,Y\rangle_2=\mathrm{Tr}(X^\dagger Y).
 ```
 
 Thus $`K_t`$ is positive and self-adjoint on operator space. Its eigenvalues lie between zero and $`\|K_t\|_{2\to2}`$, so $`K_t^2\le\|K_t\|_{2\to2}K_t`$. Applied to the moving state, this gives
@@ -265,10 +265,10 @@ This is the mathematical step that turns a rate convention into an endpoint cons
 Suppose the controller starts in $`|0\rangle`$ and the final joint channel is within half-diamond error $`\epsilon`$ of $`\mathcal T_U`$. Define the target's displacement from the identity channel by
 
 ```math
-s(U)=\frac12\|\operatorname{Ad}_U-\mathrm{id}\|_\diamond.
+s(U)=\frac12\|\mathrm{Ad}_U-\mathrm{id}\|_\diamond.
 ```
 
-For this particular comparison, a pure input without a reference can attain $`s(U)`$. A reference-assisted pure input has overlap $`\operatorname{Tr}(\eta U)`$ with its image. In an eigenbasis of $`U`$, that overlap is a convex combination of its eigenvalues, and the same combination is realized by a pure superposition with those eigenbasis probabilities. This simplification is specific to a unitary compared with the identity; generic channel-error distances still require the reference-inclusive definition.
+For this particular comparison, a pure input without a reference can attain $`s(U)`$. A reference-assisted pure input has overlap $`\mathrm{Tr}(\eta U)`$ with its image. In an eigenbasis of $`U`$, that overlap is a convex combination of its eigenvalues, and the same combination is realized by a pure superposition with those eigenbasis probabilities. This simplification is specific to a unitary compared with the identity; generic channel-error distances still require the reference-inclusive definition.
 
 Choose an input attaining $`s(U)`$. Its initial joint state $`\sigma_0`$ and the desired output $`\omega`$ are both pure, with
 
@@ -283,7 +283,7 @@ The actual output has $`D(\sigma_T,\omega)\le\epsilon`$. For a traceless Hermiti
 \ge\sqrt2\,(s(U)-\epsilon)_+.
 ```
 
-Closeness to the pure target also limits the available purity loss. Measuring the projector $`\omega`$ gives $`\operatorname{Tr}(\omega\sigma_T)\ge1-\epsilon`$, so
+Closeness to the pure target also limits the available purity loss. Measuring the projector $`\omega`$ gives $`\mathrm{Tr}(\omega\sigma_T)\ge1-\epsilon`$, so
 
 ```math
 P(T)\ge(1-\epsilon)^2,
@@ -383,8 +383,8 @@ The project supplies a different starting point. Consider only the maximally mix
 Exact controller return on this input makes the cross term vanish in the identity
 
 ```math
-\operatorname{Tr}\omega_T^2
-=\frac{\operatorname{Tr}\beta^2}{d}
+\mathrm{Tr}\omega_T^2
+=\frac{\mathrm{Tr}\beta^2}{d}
  +\|\omega_T-\tau\|_2^2.
 ```
 
@@ -401,7 +401,7 @@ On the support of $`\beta`$, introduce the weighted norm
 
 ```math
 \|X\|_\beta^2
-=\operatorname{Tr}\left[
+=\mathrm{Tr}\left[
  X^\dagger(I_S\otimes\beta^{-1})X\right].
 ```
 
@@ -420,12 +420,12 @@ This weighting normalizes the initial purity of a pure data state:
 \quad\text{when }\rho\text{ is pure}.
 ```
 
-It also makes $`X\mapsto\operatorname{Tr}_C(X)\otimes\beta`$ an orthogonal projection. Consequently,
+It also makes $`X\mapsto\mathrm{Tr}_C(X)\otimes\beta`$ an orthogonal projection. Consequently,
 
 ```math
-\|\operatorname{Tr}_C X\|_2\le\|X\|_\beta,
+\|\mathrm{Tr}_C X\|_2\le\|X\|_\beta,
 \qquad
-P_\beta(T)\ge\operatorname{Tr}[\mathcal E(\rho)^2].
+P_\beta(T)\ge\mathrm{Tr}[\mathcal E(\rho)^2].
 ```
 
 If the data output is within error $`\epsilon`$ of the pure state $`U\rho U^\dagger`$, the final expression is at least $`(1-\epsilon)^2`$. The earlier displacement argument now applies to the data in this weighted calculation and gives the same law,
@@ -481,7 +481,7 @@ Earlier success levels are dark for subsequent jumps: neither the jump nor its s
 This is an operator identity for arbitrary inputs and references. After tracing the controller,
 
 ```math
-\mathcal E_m=q^m\,\mathrm{id}+(1-q^m)\operatorname{Ad}_U,
+\mathcal E_m=q^m\,\mathrm{id}+(1-q^m)\mathrm{Ad}_U,
 \qquad
 \epsilon_m=s(U)q^m,
 \qquad A=ma.
@@ -565,7 +565,7 @@ It decays without feeding the active diagonal blocks. The old success population
 ```math
 Q_m=\prod_{j=1}^m q_{\rm rot}(a_j),
 \qquad
-\mathcal E_m=Q_m\,\mathrm{id}+(1-Q_m)\operatorname{Ad}_U,
+\mathcal E_m=Q_m\,\mathrm{id}+(1-Q_m)\mathrm{Ad}_U,
 \qquad A=\sum_j a_j.
 ```
 

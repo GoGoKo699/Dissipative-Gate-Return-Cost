@@ -16,7 +16,7 @@ Write
 \qquad
 A=\frac12\int_0^T\|\mathcal L_t\|_{2\to2}\,dt,
 \qquad
-s(U)=\frac12\|\operatorname{Ad}_U-\mathrm{id}_S\|_\diamond.
+s(U)=\frac12\|\mathrm{Ad}_U-\mathrm{id}_S\|_\diamond.
 ```
 
 The action uses the induced Hilbert–Schmidt norm of the actual generator, as in the [return law](return-law.md). It is invariant under a change of jump representation. The value $`s(U)`$ is positive precisely when $`U`$ is nontrivial as a channel.
@@ -25,7 +25,7 @@ The action uses the induced Hilbert–Schmidt norm of the actual generator, as i
 
 ```math
 \mathcal E_m
-=Q_m\,\mathrm{id}_S+(1-Q_m)\operatorname{Ad}_U,
+=Q_m\,\mathrm{id}_S+(1-Q_m)\mathrm{Ad}_U,
 \qquad
 Q_m=\prod_{j=1}^m q(a_j).
 \tag{1}
@@ -46,7 +46,7 @@ For equal stage actions $`a_j=A/m`$, the exact half-diamond error and its conseq
 ```math
 \begin{aligned}
 \epsilon_m
-&:=\frac12\|\mathcal E_m-\operatorname{Ad}_U\|_\diamond
+&:=\frac12\|\mathcal E_m-\mathrm{Ad}_U\|_\diamond
 =s(U)\,q(A/m)^m,\\
 \epsilon_m
 &\le s(U)\min\left\{1,
@@ -241,9 +241,9 @@ p_j=(1-q)q^{j-1}\quad(1\le j\le m).
 \tag{13}
 ```
 
-Its off-diagonal entries need not vanish: for example, the $`0,j`$ entry is $`c_j\operatorname{Tr}(\rho U^\dagger)`$. The controller marginal is therefore generally input dependent, and (13) alone is not its density matrix.
+Its off-diagonal entries need not vanish: for example, the $`0,j`$ entry is $`c_j\mathrm{Tr}(\rho U^\dagger)`$. The controller marginal is therefore generally input dependent, and (13) alone is not its density matrix.
 
-Nevertheless, pinching in the flag basis cannot decrease von Neumann entropy. Define entropy in bits by $`S_2(\beta)=-\operatorname{Tr}(\beta\log_2\beta)`$ and binary entropy by $`h_2(q)=-q\log_2q-(1-q)\log_2(1-q)`$. For the actual controller marginal $`\beta_C`$ and $`0<q<1`$,
+Nevertheless, pinching in the flag basis cannot decrease von Neumann entropy. Define entropy in bits by $`S_2(\beta)=-\mathrm{Tr}(\beta\log_2\beta)`$ and binary entropy by $`h_2(q)=-q\log_2q-(1-q)\log_2(1-q)`$. For the actual controller marginal $`\beta_C`$ and $`0<q<1`$,
 
 ```math
 \begin{aligned}

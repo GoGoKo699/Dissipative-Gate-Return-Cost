@@ -47,7 +47,7 @@ Hermitian-jump evolution decreases joint purity. Its speed and purity loss satis
 
 ```math
 \|\sigma_T-\sigma_0\|_2^2
-\le A\left(\operatorname{Tr}\sigma_0^2-\operatorname{Tr}\sigma_T^2\right).
+\le A\left(\mathrm{Tr}\sigma_0^2-\mathrm{Tr}\sigma_T^2\right).
 ```
 
 A nontrivial gate moves a suitable pure input by a finite distance. Approximate joint return requires the full final output to be close to another pure state, which permits only a small purity loss. Combining the two facts forces the inverse-error action law. For an exactly returned mixed controller, a stationary-product argument and a weighted Hilbert–Schmidt norm give the same conclusion without a dimension or spectral factor.
